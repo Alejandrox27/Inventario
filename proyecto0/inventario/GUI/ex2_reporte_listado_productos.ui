@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Reporte_listado_productos</class>
+ <widget class="QWidget" name="Reporte_listado_productos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>593</width>
+    <height>286</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>593</width>
+    <height>286</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>593</width>
+    <height>286</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Reporte - Listado productos</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item>
+      <widget class="QTableWidget" name="tbl_listado">
+       <column>
+        <property name="text">
+         <string>ID Producto</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Cantidad</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Valor</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>¿Disponible?</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txt_buscar_id">
+       <property name="placeholderText">
+        <string>Buscar producto por su ID o No insertar para ver todos los productos</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_buscar">
+       <property name="styleSheet">
+        <string notr="true">QPushButton #btn_buscar {
+	border-radius: 5px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Buscar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
